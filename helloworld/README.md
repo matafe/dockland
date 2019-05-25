@@ -10,3 +10,6 @@ Simple shell script helloworld.sh executed on docker container
 
 ## Run it
 ```docker run -it matafe/dockland/helloworld```
+
+## Output
+```Hello World```
