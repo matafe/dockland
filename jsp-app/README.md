@@ -1,4 +1,4 @@
-# Simple JSP 2 webapp on Tomcat
+# Simple JSP webapp on Tomcat
 
 ## Checkout 
 ```bash
