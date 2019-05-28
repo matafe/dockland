@@ -10,6 +10,12 @@
   <role rolename="manager-jmx"/>
   <role rolename="manager-status"/>
 
+  <role rolename="appadmin"/>
+  <role rolename="appuser"/>
+
   <user username="admin" password="tomcat" roles="manager-gui,manager-status" />  
+ 
+  <user username="appadmin" password="appadmin1" roles="appadmin,appuser" />
+  <user username="appuser" password="appuser1" roles="appuser" />
 
 </tomcat-users>

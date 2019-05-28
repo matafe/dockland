@@ -1,12 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xmlns="http://java.sun.com/xml/ns/javaee"
-    xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
-      http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" 
-        id="WebApp_ID" version="3.0">
- 
-    <display-name>cargo-deploy</display-name>
-    <welcome-file-list>
-        <welcome-file>index.jsp</welcome-file>
-    </welcome-file-list>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+  xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+      http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+
+  <display-name>JSP App</display-name>
+  
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+
+  <security-constraint>
+    <web-resource-collection>
+      <web-resource-name>SecuredPages</web-resource-name>
+      <url-pattern>/secured/*</url-pattern>
+      <http-method>GET</http-method>
+      <http-method>POST</http-method>
+    </web-resource-collection>
+
+    <auth-constraint>
+      <description>Administrator</description>
+      <role-name>appadmin</role-name>
+    </auth-constraint>
+  </security-constraint>
+
+  <security-role>
+    <role-name>appadmin</role-name>
+  </security-role>
+
+  <login-config>
+    <auth-method>BASIC</auth-method>
+  </login-config>
+
+  <error-page>
+    <error-code>403</error-code>
+    <location>/403.jsp</location>
+  </error-page>
+
 </web-app>

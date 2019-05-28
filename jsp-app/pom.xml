@@ -50,12 +50,10 @@
           <configuration>
             <url>http://localhost:8080/manager/text</url>
             <port>8080</port>
-            <path>/jsp-app</path>
+            <path>/${project.build.finalName}</path>
             <!-- Set update to true to avoid exist war package can not be override error -->
             <update>true</update>
-            <!-- Because deploy this maven project using plugin in pom so use the manager-script role user. -->
-            <username>tomcat</username>
-            <password>tomcat</password>
+            <tomcatUsers>config/tomcat9/conf/tomcat-users.xml</tomcatUsers>
           </configuration>
         </plugin>
         <plugin>
