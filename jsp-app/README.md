@@ -26,14 +26,15 @@ docker build -t matafe/dockland/jsp-app . &&
 docker run -d -p 8090:8080 -v /tmp/logs:/usr/local/tomcat/logs --name jsp-app matafe/dockland/jsp-app
 ````
 
-### Check if container is running.
-docker ps
+[http://localhost:8090/jsp-app](http://localhost:8090/jsp-app)  or  [http://localhost:8090/manager](http://localhost:8090/manager)
 
+### Check if the docker container is running.
+```docker ps```
 
-### Connect on docker container.
-docker exec -it jsp-app bash
+### Connect on a detached docker container.
+```docker exec -it jsp-app bash```
 
-## Deploy in other Tomcat Server Locally
+## Deploy in another Tomcat server locally
 
 ```bash
 export TOMCAT_HOME=/opt/java/apache-tomcat-9.0.20
@@ -53,4 +54,4 @@ mvn tomcat7:deploy
 ```
 
 ## Maven app creation
- mvn archetype:generate -DarchetypeGroupId=org.apache.maven.archetypes -DarchetypeArtifactId=maven-archetype-webapp -DarchetypeVersion=1.4 -DgroupId=com.matafe -DartifactId=jsp-app -Dversion=1.0-SNAPSHOT -Dpackage=com.matafe.jsp-app -DinteractiveMode=false
+ ```mvn archetype:generate -DarchetypeGroupId=org.apache.maven.archetypes -DarchetypeArtifactId=maven-archetype-webapp -DarchetypeVersion=1.4 -DgroupId=com.matafe -DartifactId=jsp-app -Dversion=1.0-SNAPSHOT -Dpackage=com.matafe.jsp-app -DinteractiveMode=false```
