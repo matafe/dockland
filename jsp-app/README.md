@@ -2,20 +2,21 @@
 
 ## Checkout 
 ```bash
-git clone https://github.com/matafe/jsp-app.git
+git clone https://github.com/matafe/dockland.git
 ````
 
 ## Build
 ```bash
+cd jsp-app
 mvn clean package
 ```
 
-## Run local for DEV
+## Run local for dev
 ```bash
 mvn tomcat7:run
 ````
 
-http://localhost:8080/jsp-app
+[http://localhost:8080/jsp-app](http://localhost:8080/jsp-app)
 
 ## Run in a docker container
 ```bash
@@ -27,10 +28,10 @@ docker run -d -p 8090:8080 --name jsp-app matafe/dockland/jsp-app
 ### Connect on docker container.
 docker exec -it jspapp1 bash
 
-## Deploy in other Tomcat Server
+## Deploy in other Tomcat Server Locally
 
 ```bash
-export TOMCAT_HOME=/opt/java/apache-tomcat-8.5.31
+export TOMCAT_HOME=/opt/java/apache-tomcat-9.0.20
 ````
 
 Add to *$TOMCAT_HOME/conf/tomcat-users.xml*
@@ -46,15 +47,5 @@ $TOMCAT_HOME/bin/catalina.sh run
 mvn tomcat7:deploy
 ```
 
-## Maven App Creation
+## Maven app creation
  mvn archetype:generate -DarchetypeGroupId=org.apache.maven.archetypes -DarchetypeArtifactId=maven-archetype-webapp -DarchetypeVersion=1.4 -DgroupId=com.matafe -DartifactId=jsp-app -Dversion=1.0-SNAPSHOT -Dpackage=com.matafe.jsp-app -DinteractiveMode=false
-
-## Git Repo
-
-```bash
-git init
-git add .
-git commit -m "Initial commit"
-git remote add origin https://github.com/matafe/jsp-app.git
-git push -u origin master
-```
