@@ -3,12 +3,12 @@ Docker images samples.
 
 ## Checkout 
 ```bash
-git clone https://github.com/matafe/docklang.git
+git clone https://github.com/matafe/dockland.git
 ````
 
 
-### [/helloworld](./helloworld)
-A simple bash script docker image.
+### [/helloworld-sh](./helloworld-sh)
+A simple shell script docker image.
 
 ### [/jsp-app](./jsp-app)
 
