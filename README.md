@@ -1,28 +1,19 @@
 # dockland
-Docker images samples.
+Docker examples.
 
 ## Checkout 
 ```bash
 git clone https://github.com/matafe/dockland.git
 ````
 
+- [/helloworld-jar](./helloworld-jar) - A executable jar application docker image.
 
-### [/helloworld-sh](./helloworld-sh)
-A simple shell script docker image.
-<<<<<<< HEAD
+- [/helloworld-sh](./helloworld-sh) - A simple shell script docker image.
 
-### [/helloworld-jar](./helloworld-jar)
-A executable jar application docker image.
-=======
->>>>>>> 1641ea057cf1e5657f1fa381a81db6ca7700a386
-
-### [/jsp-app](./jsp-app)
-
-A simple jsp webapp docker image.
+- [/jsp-app](./jsp-app) - A simple jsp webapp docker image.
 
 
-
-## GIT repo creation
+## git repository creation
 
 ```bash
 git init
