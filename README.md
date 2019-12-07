@@ -13,7 +13,7 @@ git clone https://github.com/matafe/dockland.git
 - [/jsp-app](./jsp-app) - A simple jsp webapp docker image.
 
 
-## git repository creation
+## GIT repo creation
 
 ```bash
 git init
