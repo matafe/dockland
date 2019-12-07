@@ -1,3 +1,4 @@
 rootProject.name = 'dockland'
 
-include 'docker-hello-world-jar'
+include 'helloworld-jar'
+include 'helloworld-sh'

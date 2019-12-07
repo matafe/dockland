@@ -4,7 +4,7 @@ plugins {
     id 'jacoco'
 }
 
-applicationName = 'hello-world-app'
+applicationName = 'helloworld-app'
 
 application {
     mainClassName = 'com.matafe.docker.App'
