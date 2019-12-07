@@ -1,4 +1,8 @@
 rootProject.name = 'dockland'
 
+<<<<<<< HEAD
+include 'helloworld-jar'
+=======
 include 'docker-hello-world-jar'
+>>>>>>> 1641ea057cf1e5657f1fa381a81db6ca7700a386
 include 'helloworld-sh'

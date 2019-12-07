@@ -9,6 +9,12 @@ git clone https://github.com/matafe/dockland.git
 
 ### [/helloworld-sh](./helloworld-sh)
 A simple shell script docker image.
+<<<<<<< HEAD
+
+### [/helloworld-jar](./helloworld-jar)
+A executable jar application docker image.
+=======
+>>>>>>> 1641ea057cf1e5657f1fa381a81db6ca7700a386
 
 ### [/jsp-app](./jsp-app)
 
