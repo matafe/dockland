@@ -1,0 +1,38 @@
+plugins {
+    id 'java'
+    id 'application'
+    id 'jacoco'
+}
+
+applicationName = 'hello-world-app'
+
+application {
+    mainClassName = 'com.matafe.docker.App'
+}
+
+jar {
+    manifest {
+        attributes 'Main-Class': 'com.matafe.docker.App'
+    }
+}
+
+test{
+    // Use JUnit 5 test framework
+    useJUnitPlatform()
+}
+
+jacocoTestReport {
+    reports {
+        xml.enabled false
+        csv.enabled false
+    }
+}
+
+dependencies {
+    // Use JUnit 5 test framework
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.5.2'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.5.2'
+    // Runner for IDE
+    testRuntimeOnly 'org.junit.platform:junit-platform-runner:1.5.2'
+}
+
